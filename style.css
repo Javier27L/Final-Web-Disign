@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body.badan {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./assets/beasiswa.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    text-align: center;
+    margin-top: 10px;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: skyblue;
+    text-transform: uppercase;
+}
+
+.navbar ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li :hover::after {
+    width: 100%;
+}
+
+.navbar ul li :hover, .navbar.on {
+    color: green;
+    font-weight: 200;
+    font-size: medium;
+    text-decoration: underline;
+
+}
+
+@media (max-width:500px) {
+    .navbar {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px 10px;
+        position: relative;
+    }
+    
+    .navbar ul li a {
+        color: skyblue;
+        text-transform: uppercase;
+    }
+    
+    .navbar ul li ::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: green;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+}
+
+.isi {
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: rgb(196, 185, 185);
+    position: absolute;
+    transform: translate();
+}
+
+.isi h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(196, 185, 185);
+    text-decoration: underline;
+}
+
+.isi p {
+    margin: 20px 100px;
+    font-size: 100;
+    line-height: 25px;
+}
+
+body.data {
+    width: 100%;
+    height: 160vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("./assets/unklab.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+}
+
+.in h1 {
+    text-align: center;
+    color: rgb(196, 185, 185);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.in h3 {
+    color: rgb(196, 185, 185);
+    margin-left: 520px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.in p {
+    color: rgb(196, 185, 185);
+    font-size: 50;
+    line-height: 25px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.in ol li {
+    color: rgb(196, 185, 185);
+    font-size: 50;
+    line-height: 25px;
+}
+
+footer {
+    color: red;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .in h3{
+        text-align: center;
+        margin-right: 100px;
+        margin-left: 30px;
+    }
+
+    .in p {
+        margin-right: 60px;
+        margin-left: -20px;
+        margin-bottom: 70px;
+        text-align: justify;
+    }
+
+    .img
+    {
+        display:none;
+    }
+    
+}
